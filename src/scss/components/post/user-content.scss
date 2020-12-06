@@ -1,0 +1,39 @@
+.user-content{
+	display: flex;
+	padding: 0 20px;
+	img{
+		width: 30px;
+		margin: 13px 20px 0px 0px;
+	}
+	&__date{
+		font-size: rem(9px);
+		line-height: rem(9px);
+	    color: $grey-light;
+	}
+	.username{
+		font-size: rem(14px);
+		line-height: rem(13px);
+		font-weight: 900;
+		color: $text-green;
+		margin-bottom: 0;
+	}
+	.comment{
+		display: grid;
+	    grid-template-columns: auto auto;
+	    column-gap: 14px;
+	    .username{
+	    	grid-column: 1/1;
+    		grid-row: 1;
+	    }
+	    .user-content__date{
+    	    grid-column: 1/1;
+		    grid-row: 1;
+		    margin: 32px 0 0px;
+	    }
+	    .user-content__title{
+	    	grid-row: 1/2;
+    		margin-top: 11px;
+		    word-break: break-all;
+	    }
+	}
+}

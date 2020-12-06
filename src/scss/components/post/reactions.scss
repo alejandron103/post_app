@@ -1,0 +1,67 @@
+.reactions{
+	display: flex;
+	margin: 10px 0;
+	&.box-shadow{
+		margin-left: 16px;
+		margin-top: 0;
+		padding: 12px 20px;
+		width: 65px;
+		span{
+			margin-left: 5px;
+		}
+	}
+	span{
+		display: inline-block;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		color: transparent;
+		cursor: pointer;
+		position: relative;
+		margin-left: -5px;
+		border: 1px solid $white;
+		font-size: rem(1px);
+		&::before{
+			position: relative;
+    		top: -12px;
+			left: -10px;
+			opacity: 0;
+			transition: .5s ease-in;
+			color: $grey-light;
+			font-size: rem(8px);
+		}
+		&:nth-child(1){
+			&::before{
+				left: -4px;
+			}
+		}
+		&:nth-child(2){
+			&::before{
+				left: -2px;
+			}
+		}
+		&:hover{
+			&::before{
+				opacity: 1;
+			}
+		}
+	}
+	&__good{
+		background-color: $good-reaction;
+		&::before{
+			content: 'Bueno';
+		}
+	}
+	&__bad{
+		background-color: $bad-reaction;
+		&::before{
+			content: 'malo';
+		}	
+	}
+	&__acceptable{
+		background-color: $acceptable-reaction;	
+		&::before{
+			content: 'aceptable';
+		}
+	}
+}

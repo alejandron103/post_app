@@ -1,0 +1,52 @@
+body{
+	font-family: $font;
+	color: $text-color;
+	font-size: rem(14px);
+	margin: 0;
+	background-color: $main-bg; 
+	padding-top: 4rem;
+}
+
+
+button{
+	padding: rem(5px) rem(15px);
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	&:focus{
+		outline: none;
+	}
+}
+
+textarea{
+	resize: none;
+	border: none;
+	padding: 10px 0 0px 10px;
+	font-family: $font;
+	font-weight: 400;
+	display: block;
+	&:focus{
+		outline: none;
+	}
+}
+
+.btn{
+	&-green{
+		color: $white;
+		background-color: $button-color;
+	}
+	&-tranparent{
+		background-color: transparent;
+		color: $text-green;
+	}
+}
+
+.title{
+	font-weight: 900;
+	font-size: rem(16px);
+	color: $black;
+}
+
+.box-shadow{
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.23);
+}

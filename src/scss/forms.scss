@@ -1,0 +1,21 @@
+form{
+	width: 100%;
+	background-color: white;
+	position: relative;
+	
+	.form-field{
+		border-bottom: 1px solid $border-color;
+	}
+	textarea{
+		color: $text-green;
+		width: calc(100% - 10px);
+    	&::placeholder{
+    		color: $text-green;
+    	}
+	}
+	.submit-container{
+		display: flex;
+		justify-content: flex-end;
+		padding: 7px;
+	}
+}
